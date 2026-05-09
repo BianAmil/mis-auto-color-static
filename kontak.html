@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami | Mis Auto Color</title>
+    <meta name="description" content="Hubungi Mis Auto Color untuk konsultasi gratis dan reservasi layanan perbaikan mobil.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Background Glassmorphism Orbs -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent">Mis</span> Auto Color
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li><a href="layanan.html" class="nav-link">Layanan</a></li>
+                    <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="kontak.html" class="nav-link active">Kontak</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="kontak.html" class="btn btn-primary">Konsultasi Gratis</a>
+                </div>
+            </div>
+            
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background-image: url('assets/images/service_polish.png');">
+        <div class="page-header-content fade-up">
+            <h1 class="page-title">Hubungi <span>Kami</span></h1>
+            <p class="page-subtitle">Punya pertanyaan atau ingin booking jadwal pengerjaan? Kami siap melayani Anda.</p>
+        </div>
+    </header>
+
+    <main class="page-content container">
+        
+        <!-- Contact Section -->
+        <section class="contact-section" style="padding-top: 0; background: none;">
+            <div class="contact-grid">
+                <div class="contact-info glass fade-right">
+                    <h3>Informasi Kontak</h3>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="ri-map-pin-2-fill"></i></div>
+                        <div class="info-text">
+                            <h4>Alamat Bengkel</h4>
+                            <p>Jl. Otomotif Raya No. 88, Kebayoran, Jakarta Selatan</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="ri-phone-fill"></i></div>
+                        <div class="info-text">
+                            <h4>Telepon / WhatsApp</h4>
+                            <p>+62 812 3456 7890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="ri-mail-fill"></i></div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p>info@misautocolor.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="ri-time-fill"></i></div>
+                        <div class="info-text">
+                            <h4>Jam Operasional</h4>
+                            <p>Senin - Sabtu: 08:00 - 17:00<br>Minggu: Tutup</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-link"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="#" class="social-link"><i class="ri-youtube-fill"></i></a>
+                        <a href="#" class="social-link"><i class="ri-whatsapp-line"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form glass fade-left">
+                    <h3>Kirim Pesan / Konsultasi</h3>
+                    <form action="#" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" class="form-control" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor WhatsApp</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="0812xxxx" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Layanan yang Dibutuhkan</label>
+                            <select id="service" class="form-control">
+                                <option value="Body Repair">Body Repair</option>
+                                <option value="Auto Painting">Auto Painting</option>
+                                <option value="Coating">Nano Ceramic Coating</option>
+                                <option value="Lainnya">Lainnya / Konsultasi</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan / Detail Kerusakan</label>
+                            <textarea id="message" rows="5" class="form-control" placeholder="Ceritakan detail kerusakan atau kebutuhan mobil Anda..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">Kirim Pesan <i class="ri-send-plane-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <span class="logo-accent">Mis</span> Auto Color
+                    </a>
+                    <p>Pilihan utama untuk perbaikan body dan pengecatan mobil premium di Indonesia.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="layanan.html">Layanan</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="layanan.html">Body Repair</a></li>
+                        <li><a href="layanan.html">Oven Painting</a></li>
+                        <li><a href="layanan.html">Ketok Magic</a></li>
+                        <li><a href="layanan.html">Nano Ceramic</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mis Auto Color. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="assets/main.js"></script>
+</body>
+</html>
