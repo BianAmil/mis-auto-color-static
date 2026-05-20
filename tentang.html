@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami | Mis Auto Color</title>
-    <meta name="description" content="Profil perusahaan, visi, dan misi Mis Auto Color bengkel body repair premium.">
+    <title>Tentang Kami | Céleste Culinary Group</title>
+    <meta name="description" content="Pelajari warisan cita rasa Céleste Culinary Group, filosofi keberlanjutan pangan, serta profil Chef berbakat kami.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -23,21 +23,23 @@
     <div class="bg-orb orb-2"></div>
 
     <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container" style="height: 75px;">
             <a href="index.html" class="logo">
-                <span class="logo-accent">Mis</span> Auto Color
+                CÉLESTE<span class="logo-accent">.</span>
             </a>
             
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Beranda</a></li>
-                    <li><a href="layanan.html" class="nav-link">Layanan</a></li>
+                    <li><a href="layanan.html" class="nav-link">Menu & Layanan</a></li>
                     <li><a href="tentang.html" class="nav-link active">Tentang Kami</a></li>
-                    <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+                    <li><a href="kontak.html" class="nav-link">Kontak & Lokasi</a></li>
                 </ul>
                 <div class="nav-cta">
-                    <a href="kontak.html" class="btn btn-primary">Konsultasi Gratis</a>
+                    <a href="admin.html" class="btn btn-outline" style="padding: 0.5rem 1.2rem; font-size: 0.8rem; border-color: var(--accent-gold); color: var(--accent-gold);">
+                        <i class="ri-dashboard-fill" style="margin-right: 5px; margin-left: 0;"></i> Admin Panel
+                    </a>
                 </div>
             </div>
             
@@ -47,65 +49,86 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="page-header" style="background-image: url('assets/images/about_garage.png');">
-        <div class="page-header-content fade-up">
-            <h1 class="page-title">Tentang <span>Kami</span></h1>
-            <p class="page-subtitle">Dedikasi kami untuk kesempurnaan estetika kendaraan Anda, dibangun sejak 2023.</p>
+    <!-- Subpage Header -->
+    <section class="section" style="padding-top: 10rem; padding-bottom: 3rem; text-align: center;">
+        <div class="container">
+            <span class="badge">Filosofi & Kisah</span>
+            <h1 class="section-title" style="font-size: 3.5rem;">Warisan <span>Céleste</span></h1>
+            <p class="section-desc" style="max-width: 600px; margin: 0 auto;">Di balik hidangan yang memukau, tersimpan kisah dedikasi tanpa batas untuk menghadirkan kemurnian rasa di atas piring.</p>
         </div>
-    </header>
+    </section>
 
-    <main class="page-content container">
-        
-        <!-- About Section -->
-        <section class="about-grid fade-up" style="margin-bottom: 80px;">
-            <div class="about-image-wrapper">
-                <div class="about-image glass">
-                    <img src="assets/images/hero.png" alt="Mis Auto Color Garage">
+    <!-- Detailed Story Section -->
+    <section class="section" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="badge">Kisah Kami</span>
+                    <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: 1.5rem;">Seni Menembus <span>Batas Kuliner</span></h2>
+                    <p class="about-desc">Didirikan dengan visi untuk menaikkan standar gastronomi dunia, Céleste Culinary Group merangkai bahan segar premium menjadi pengalaman emosional. Bagi kami, makanan bukan sekadar kebutuhan fisik, melainkan media seni untuk merayakan hidup.</p>
+                    <p class="about-desc">Setiap dapur di Céleste beroperasi di bawah prinsip integritas mutlak. Kami bekerja sama secara eksklusif dengan petani lokal bersertifikat organik dan nelayan artisanal yang menangkap ikan secara ramah lingkungan untuk memastikan rasa alami tetap murni dan berkualitas prima.</p>
+                    <p class="about-desc">Kami sangat bangga atas penghargaan Bintang Tiga Michelin yang kami raih secara beruntun—sebuah bukti konsistensi, inovasi tanpa henti, dan komitmen kami terhadap pelayanan paripurna bagi tamu terhormat kami.</p>
                 </div>
-                <div class="experience-badge glass">
-                    <span class="exp-number">3+</span>
-                    <span class="exp-text">Tahun<br>Pengalaman</span>
+                <div class="about-image-wrapper">
+                    <div class="about-image glass">
+                        <img src="assets/images/restaurant_facade.png" alt="Céleste Dining Room View">
+                    </div>
                 </div>
             </div>
-            
-            <div class="about-text">
-                <h2 class="section-title">Profil <span>Perusahaan</span></h2>
-                <p class="about-desc">Mis Auto Color adalah bengkel spesialis perbaikan body dan pengecatan mobil premium yang berbasis di Banyumas. Kami didirikan dengan satu tujuan utama: mengembalikan dan meningkatkan nilai estetika mobil pelanggan kami pada level tertinggi yang dimungkinkan.</p>
-                <p class="about-desc">Dengan memadukan tenaga ahli profesional yang telah malang melintang di industri otomotif, material berkualitas premium import, dan peralatan teknologi mutakhir (seperti ruang oven kedap debu), kami menjamin setiap hasil pengerjaan kami memenuhi standar pameran (show-quality).</p>
-                
-                <ul class="about-features">
-                    <li><i class="ri-checkbox-circle-fill"></i> Teknisi Berpengalaman & Bersertifikat</li>
-                    <li><i class="ri-checkbox-circle-fill"></i> Ruang Oven Pengecatan Kedap Debu</li>
-                    <li><i class="ri-checkbox-circle-fill"></i> Garansi Hasil Pengerjaan</li>
-                    <li><i class="ri-checkbox-circle-fill"></i> Material Cat & Coating Premium</li>
-                </ul>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Vision and Mission -->
-        <section class="vision-mission fade-up">
+    <!-- Culinary Masters Profiles -->
+    <section class="section" style="background: rgba(255, 255, 255, 0.01); border-top: 1px solid var(--border-light)">
+        <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Visi & <span>Misi</span></h2>
-                <p class="section-desc">Pondasi yang mendorong kami untuk terus berinovasi dan memberikan pelayanan paripurna kepada setiap pelanggan setia kami.</p>
+                <span class="badge">Para Maestro</span>
+                <h2 class="section-title">Tim <span>Kuliner Céleste</span></h2>
+                <p class="section-desc">Di balik kesempurnaan hidangan kami, terdapat barisan talenta kuliner legendaris berskala internasional yang berdedikasi tinggi.</p>
             </div>
-            
-            <div class="vision-mission-grid">
-                <div class="vm-card glass">
-                    <div class="vm-icon"><i class="ri-eye-2-line"></i></div>
-                    <h3>Visi Kami</h3>
-                    <p>Menjadi pusat perbaikan body dan cat mobil terdepan dan paling terpercaya di Indonesia yang dikenal karena kualitas, inovasi, dan kepuasan pelanggan yang tak tertandingi.</p>
-                </div>
-                
-                <div class="vm-card glass">
-                    <div class="vm-icon"><i class="ri-rocket-2-line"></i></div>
-                    <h3>Misi Kami</h3>
-                    <p>Memberikan solusi estetik mobil terbaik menggunakan bahan premium berstandar internasional, menjaga transparansi, mempercepat waktu pengerjaan tanpa mengurangi kualitas, serta terus meningkatkan keahlian tim melalui pelatihan profesional.</p>
-                </div>
-            </div>
-        </section>
 
-    </main>
+            <div class="curations-grid">
+                <!-- Chef 1 -->
+                <div class="curation-card glass">
+                    <div class="curation-img">
+                        <img src="assets/images/menu_wagyu.png" alt="Executive Chef Portrait">
+                        <div class="curation-overlay"></div>
+                    </div>
+                    <div class="curation-content">
+                        <span class="curation-category">Executive Chef</span>
+                        <h3 class="curation-title">Chef Jean-Georges Dupont</h3>
+                        <p>Lahir di Paris dengan 20 tahun pengalaman di restoran bintang tiga Michelin. Terkenal akan keahliannya merangkai dekonstruksi rasa modern.</p>
+                    </div>
+                </div>
+
+                <!-- Chef 2 -->
+                <div class="curation-card glass">
+                    <div class="curation-img">
+                        <img src="assets/images/menu_salmon.png" alt="Sommelier Portrait">
+                        <div class="curation-overlay"></div>
+                    </div>
+                    <div class="curation-content">
+                        <span class="curation-category">Master Sommelier</span>
+                        <h3 class="curation-title">Amandine Leroy</h3>
+                        <p>Mengurasi lebih dari 1.200 jenis koleksi wine premium dunia di cellar kami. Spesialisasi memadukan wine langka dengan hidangan penutup.</p>
+                    </div>
+                </div>
+
+                <!-- Chef 3 -->
+                <div class="curation-card glass">
+                    <div class="curation-img">
+                        <img src="assets/images/menu_souffle.png" alt="Pastry Chef Portrait">
+                        <div class="curation-overlay"></div>
+                    </div>
+                    <div class="curation-content">
+                        <span class="curation-category">Head Pastry Chef</span>
+                        <h3 class="curation-title">Yuki Tanaka</h3>
+                        <p>Menggabungkan ketelitian estetika minimalis Jepang dengan kekayaan adonan pencuci mulut tradisional Prancis untuk penutup yang sempurna.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -113,36 +136,38 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <a href="index.html" class="logo">
-                        <span class="logo-accent">Mis</span> Auto Color
+                        CÉLESTE<span class="logo-accent">.</span>
                     </a>
-                    <p>Pilihan utama untuk perbaikan body dan pengecatan mobil premium di Indonesia.</p>
+                    <p>Mahakarya kuliner modern bercita rasa legendaris dengan pelayanan kelas dunia untuk penikmat gastronomi sejati.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Tautan Cepat</h4>
+                    <h4>Pintasan</h4>
                     <ul>
                         <li><a href="index.html">Beranda</a></li>
-                        <li><a href="layanan.html">Layanan</a></li>
+                        <li><a href="layanan.html">Menu & Layanan</a></li>
                         <li><a href="tentang.html">Tentang Kami</a></li>
-                        <li><a href="kontak.html">Kontak</a></li>
+                        <li><a href="kontak.html">Kontak & Lokasi</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Layanan</h4>
+                    <h4>Kategori Menu</h4>
                     <ul>
-                        <li><a href="layanan.html">Body Repair</a></li>
-                        <li><a href="layanan.html">Oven Painting</a></li>
-                        <li><a href="layanan.html">Ketok Magic</a></li>
-                        <li><a href="layanan.html">Nano Ceramic</a></li>
+                        <li><a href="layanan.html">Appetizer</a></li>
+                        <li><a href="layanan.html">Main Course</a></li>
+                        <li><a href="layanan.html">Dessert</a></li>
+                        <li><a href="layanan.html">Beverage</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Mis Auto Color. All rights reserved.</p>
+                <p>&copy; 2026 Céleste Culinary Group. All rights reserved.</p>
+                <p>Designed with Luxury Aesthetics</p>
             </div>
         </div>
     </footer>
 
-    <!-- Custom JS -->
+    <!-- Shared Local Database and Main Script -->
+    <script src="assets/js/db.js"></script>
     <script src="assets/main.js"></script>
 </body>
 </html>

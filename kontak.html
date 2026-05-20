@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak Kami | Mis Auto Color</title>
-    <meta name="description" content="Hubungi Mis Auto Color untuk konsultasi gratis dan reservasi layanan perbaikan mobil.">
+    <title>Hubungi Kami | Céleste Culinary Group</title>
+    <meta name="description" content="Kunjungi salah satu restoran kami atau kirimkan pertanyaan mengenai sewa venue pribadi, press, katering elit, dan kolaborasi.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -23,21 +23,23 @@
     <div class="bg-orb orb-2"></div>
 
     <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container" style="height: 75px;">
             <a href="index.html" class="logo">
-                <span class="logo-accent">Mis</span> Auto Color
+                CÉLESTE<span class="logo-accent">.</span>
             </a>
             
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Beranda</a></li>
-                    <li><a href="layanan.html" class="nav-link">Layanan</a></li>
+                    <li><a href="layanan.html" class="nav-link">Menu & Layanan</a></li>
                     <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
-                    <li><a href="kontak.html" class="nav-link active">Kontak</a></li>
+                    <li><a href="kontak.html" class="nav-link active">Kontak & Lokasi</a></li>
                 </ul>
                 <div class="nav-cta">
-                    <a href="kontak.html" class="btn btn-primary">Konsultasi Gratis</a>
+                    <a href="admin.html" class="btn btn-outline" style="padding: 0.5rem 1.2rem; font-size: 0.8rem; border-color: var(--accent-gold); color: var(--accent-gold);">
+                        <i class="ri-dashboard-fill" style="margin-right: 5px; margin-left: 0;"></i> Admin Panel
+                    </a>
                 </div>
             </div>
             
@@ -47,50 +49,58 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="page-header" style="background-image: url('assets/images/service_polish.png');">
-        <div class="page-header-content fade-up">
-            <h1 class="page-title">Hubungi <span>Kami</span></h1>
-            <p class="page-subtitle">Punya pertanyaan atau ingin booking jadwal pengerjaan? Kami siap melayani Anda.</p>
+    <!-- Subpage Header -->
+    <section class="section" style="padding-top: 10rem; padding-bottom: 3rem; text-align: center;">
+        <div class="container">
+            <span class="badge">Hubungi Kami</span>
+            <h1 class="section-title" style="font-size: 3.5rem;">Kontak <span>& Lokasi</span></h1>
+            <p class="section-desc" style="max-width: 600px; margin: 0 auto;">Apakah Anda berencana menyelenggarakan perjamuan pribadi, menanyakan pers, atau memerlukan informasi khusus? Tim kami siap melayani Anda.</p>
         </div>
-    </header>
+    </section>
 
-    <main class="page-content container">
-        
-        <!-- Contact Section -->
-        <section class="contact-section" style="padding-top: 0; background: none;">
+    <!-- Contact & Map Section -->
+    <section class="section" style="padding-top: 2rem;">
+        <div class="container">
             <div class="contact-grid">
-                <div class="contact-info glass fade-right">
-                    <h3>Informasi Kontak</h3>
-                    <div class="info-item">
-                        <div class="info-icon"><i class="ri-map-pin-2-fill"></i></div>
-                        <div class="info-text">
-                            <h4>Alamat Bengkel</h4>
-                            <p>Jln. Karang Asri RT 04 RW 03, Karangrau, Sokaraja, Kab. Banyumas, Jawa Tengah</p>
+                <!-- Info Column -->
+                <div class="contact-info glass">
+                    <div>
+                        <span class="badge">Informasi Detil</span>
+                        <h3>Layanan Concierge</h3>
+                        <p style="margin-bottom: 2rem;">Silakan datang berkunjung langsung atau hubungi layanan concierge kami untuk pemesanan eksklusif seluruh area restoran (buyout) demi kelancaran agenda penting Anda.</p>
+                    </div>
+
+                    <div class="info-details">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="ri-map-pin-2-fill"></i></div>
+                            <div class="info-text">
+                                <h4>Alamat Restoran</h4>
+                                <p>Jalan Premium Boulevard No. 88, Suite 10, Luxury District, Jakarta Selatan</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="ri-phone-fill"></i></div>
+                            <div class="info-text">
+                                <h4>Telepon / WhatsApp</h4>
+                                <p>+62 822-3489-0919</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="ri-mail-fill"></i></div>
+                            <div class="info-text">
+                                <h4>Hubungi Via Email</h4>
+                                <p>concierge@celestegroup.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="ri-time-fill"></i></div>
+                            <div class="info-text">
+                                <h4>Jam Makan Malam</h4>
+                                <p>Selasa - Minggu: 17:00 - 23:00 (Senin Tutup)</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon"><i class="ri-phone-fill"></i></div>
-                        <div class="info-text">
-                            <h4>Telepon / WhatsApp</h4>
-                            <p>+62 822-3489-0919</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon"><i class="ri-mail-fill"></i></div>
-                        <div class="info-text">
-                            <h4>Email</h4>
-                            <p>misautocolour@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon"><i class="ri-time-fill"></i></div>
-                        <div class="info-text">
-                            <h4>Jam Operasional</h4>
-                            <p>Senin - Sabtu: 08:00 - 17:00<br>Minggu: Tutup</p>
-                        </div>
-                    </div>
-                    
+
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="ri-instagram-line"></i></a>
                         <a href="#" class="social-link"><i class="ri-facebook-circle-fill"></i></a>
@@ -98,38 +108,48 @@
                         <a href="#" class="social-link"><i class="ri-whatsapp-line"></i></a>
                     </div>
                 </div>
-                
-                <div class="contact-form glass fade-left">
-                    <h3>Kirim Pesan / Konsultasi</h3>
-                    <form action="#" method="POST" id="contactForm">
+
+                <!-- Form Column -->
+                <div class="contact-form glass">
+                    <h3>Kirim Pesan Inquiry</h3>
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Nama Lengkap</label>
                             <input type="text" id="name" class="form-control" placeholder="Masukkan nama Anda" required>
                         </div>
-                        <div class="form-group">
-                            <label for="phone">Nomor WhatsApp</label>
-                            <input type="tel" id="phone" class="form-control" placeholder="0812xxxx" required>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Alamat Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="nama@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon / WA</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="08xxxxxxxxxx" required>
+                            </div>
                         </div>
+                        
                         <div class="form-group">
-                            <label for="service">Layanan yang Dibutuhkan</label>
-                            <select id="service" class="form-control">
-                                <option value="Body Repair">Body Repair</option>
-                                <option value="Auto Painting">Auto Painting</option>
-                                <option value="Coating">Nano Ceramic Coating</option>
-                                <option value="Lainnya">Lainnya / Konsultasi</option>
+                            <label for="subject">Subjek Pesan</label>
+                            <select id="subject" class="form-control" required>
+                                <option value="Private Event Buyout">Penyewaan Venue Privat (Buyout)</option>
+                                <option value="Press / Media Inquiry">Pertanyaan Pers / Liputan Media</option>
+                                <option value="Career Opportunities">Kesempatan Berkarir</option>
+                                <option value="General Question" selected>Pertanyaan Umum</option>
                             </select>
                         </div>
+                        
                         <div class="form-group">
-                            <label for="message">Pesan / Detail Kerusakan</label>
-                            <textarea id="message" rows="5" class="form-control" placeholder="Ceritakan detail kerusakan atau kebutuhan mobil Anda..." required></textarea>
+                            <label for="message">Detail Pesan / Pertanyaan</label>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Tuliskan secara detail kebutuhan perjamuan Anda, jumlah tamu, tanggal sewa, dan preferensi hidangan..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block btn-lg">Kirim Pesan <i class="ri-send-plane-fill"></i></button>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Kirim Pesan Inquiry <i class="ri-send-plane-fill"></i></button>
                     </form>
                 </div>
             </div>
-        </section>
-
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -137,36 +157,38 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <a href="index.html" class="logo">
-                        <span class="logo-accent">Mis</span> Auto Color
+                        CÉLESTE<span class="logo-accent">.</span>
                     </a>
-                    <p>Pilihan utama untuk perbaikan body dan pengecatan mobil premium di Indonesia.</p>
+                    <p>Mahakarya kuliner modern bercita rasa legendaris dengan pelayanan kelas dunia untuk penikmat gastronomi sejati.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Tautan Cepat</h4>
+                    <h4>Pintasan</h4>
                     <ul>
                         <li><a href="index.html">Beranda</a></li>
-                        <li><a href="layanan.html">Layanan</a></li>
+                        <li><a href="layanan.html">Menu & Layanan</a></li>
                         <li><a href="tentang.html">Tentang Kami</a></li>
-                        <li><a href="kontak.html">Kontak</a></li>
+                        <li><a href="kontak.html">Kontak & Lokasi</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Layanan</h4>
+                    <h4>Kategori Menu</h4>
                     <ul>
-                        <li><a href="layanan.html">Body Repair</a></li>
-                        <li><a href="layanan.html">Oven Painting</a></li>
-                        <li><a href="layanan.html">Ketok Magic</a></li>
-                        <li><a href="layanan.html">Nano Ceramic</a></li>
+                        <li><a href="layanan.html">Appetizer</a></li>
+                        <li><a href="layanan.html">Main Course</a></li>
+                        <li><a href="layanan.html">Dessert</a></li>
+                        <li><a href="layanan.html">Beverage</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Mis Auto Color. All rights reserved.</p>
+                <p>&copy; 2026 Céleste Culinary Group. All rights reserved.</p>
+                <p>Designed with Luxury Aesthetics</p>
             </div>
         </div>
     </footer>
 
-    <!-- Custom JS -->
+    <!-- Shared Local Database and Main Script -->
+    <script src="assets/js/db.js"></script>
     <script src="assets/main.js"></script>
 </body>
 </html>

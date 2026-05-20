@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Auto Color | Bengkel Body & Paint Mobil Premium</title>
-    <meta name="description" content="Bengkel spesialis repair body mobil dan auto painting premium. Kembalikan kesempurnaan warna dan body mobil Anda bersama Mis Auto Color.">
+    <title>Céleste | Culinary Group & Fine Dining Premium</title>
+    <meta name="description" content="Selamat datang di Céleste Culinary Group. Nikmati pengalaman gastronomi bintang tiga Michelin dengan sentuhan modern dan cita rasa tak tertandingi.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -25,19 +25,21 @@
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">
-                <span class="logo-accent">Mis</span> Auto Color
+            <a href="index.html" class="logo">
+                CÉLESTE<span class="logo-accent">.</span>
             </a>
             
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link active">Beranda</a></li>
-                    <li><a href="layanan.html" class="nav-link">Layanan</a></li>
+                    <li><a href="layanan.html" class="nav-link">Menu & Layanan</a></li>
                     <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
-                    <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+                    <li><a href="kontak.html" class="nav-link">Kontak & Lokasi</a></li>
                 </ul>
                 <div class="nav-cta">
-                    <a href="kontak.html" class="btn btn-primary">Konsultasi Gratis</a>
+                    <a href="admin.html" class="btn btn-outline" style="padding: 0.5rem 1.2rem; font-size: 0.8rem; border-color: var(--accent-gold); color: var(--accent-gold);">
+                        <i class="ri-dashboard-fill" style="margin-right: 5px; margin-left: 0;"></i> Admin Panel
+                    </a>
                 </div>
             </div>
             
@@ -49,149 +51,170 @@
 
     <!-- Hero Section -->
     <header id="beranda" class="hero">
-        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <div class="container hero-container">
-                <div class="hero-text fade-up">
-                    <span class="badge">Premium Body Repair</span>
-                    <h1 class="hero-title">Kembalikan <span>Kesempurnaan</span><br>Mobil Anda</h1>
-                    <p class="hero-subtitle">Spesialis perbaikan body dan pengecatan mobil dengan standar kualitas tertinggi. Tampilan seperti baru keluar dari showroom.</p>
-                    <div class="hero-buttons">
-                        <a href="layanan.html" class="btn btn-primary btn-lg">Lihat Layanan <i class="ri-arrow-right-line"></i></a>
-                        <a href="kontak.html" class="btn btn-outline btn-lg">Hubungi Kami</a>
-                    </div>
-                </div>
+            <span class="badge">A Michelin-Starred Legacy</span>
+            <h1 class="hero-title">Savour the Art of<br><span>Sublime Gastronomy</span></h1>
+            <p class="hero-subtitle">Menyajikan mahakarya kuliner modern bercita rasa legendaris. Pengalaman sensorik yang dikurasi khusus untuk para penikmat rasa sejati.</p>
+            <div class="hero-buttons">
+                <a href="#booking-section" class="btn btn-primary btn-lg">Pesan Meja <i class="ri-arrow-right-line"></i></a>
+                <a href="layanan.html" class="btn btn-outline btn-lg">Jelajahi Menu</a>
             </div>
         </div>
         <div class="scroll-indicator">
-            <a href="layanan.html"><i class="ri-arrow-down-s-line"></i></a>
+            <a href="#heritage-section"><i class="ri-arrow-down-s-line"></i></a>
         </div>
     </header>
 
     <main>
-        <!-- Layanan Section -->
-        <section id="layanan" class="section services-section">
-            <div class="container">
-                <div class="section-header fade-up">
-                    <h2 class="section-title">Layanan <span>Unggulan</span></h2>
-                    <p class="section-desc">Kami memberikan solusi perawatan estetika terbaik untuk kendaraan Anda dengan teknologi modern dan tenaga profesional.</p>
-                </div>
-                
-                <div class="services-grid">
-                    <!-- Service 1 -->
-                    <div class="service-card glass fade-up" style="transition-delay: 0.1s;">
-                        <div class="service-image">
-                            <img src="assets/images/service_paint.png" alt="Auto Painting">
-                            <div class="service-icon"><i class="ri-paint-fill"></i></div>
-                        </div>
-                        <div class="service-content">
-                            <h3>Premium Auto Painting</h3>
-                            <p>Pengecatan full body atau per panel dengan cat kualitas premium dan oven berteknologi tinggi untuk hasil sempurna.</p>
-                            <a href="layanan.html" class="service-link">Detail Layanan <i class="ri-arrow-right-line"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Service 2 -->
-                    <div class="service-card glass fade-up" style="transition-delay: 0.2s;">
-                        <div class="service-image">
-                            <img src="assets/images/service_polish.png" alt="Body Repair">
-                            <div class="service-icon"><i class="ri-tools-fill"></i></div>
-                        </div>
-                        <div class="service-content">
-                            <h3>Body Repair & Ketok Magic</h3>
-                            <p>Perbaikan penyok, baret, hingga kerusakan berat akibat benturan. Mengembalikan bentuk body mobil presisi seperti sedia kala.</p>
-                            <a href="layanan.html" class="service-link">Detail Layanan <i class="ri-arrow-right-line"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Service 3 -->
-                    <div class="service-card glass fade-up" style="transition-delay: 0.3s;">
-                        <div class="service-image">
-                            <img src="assets/images/about_garage.png" alt="Detailing & Coating">
-                            <div class="service-icon"><i class="ri-sparkling-fill"></i></div>
-                        </div>
-                        <div class="service-content">
-                            <h3>Nano Ceramic & Detailing</h3>
-                            <p>Perlindungan ekstra untuk cat mobil Anda dengan Nano Ceramic Coating yang memberikan efek daun talas dan kilau maksimal.</p>
-                            <a href="layanan.html" class="service-link">Detail Layanan <i class="ri-arrow-right-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section about-section">
+        <!-- Heritage & Brand Story -->
+        <section id="heritage-section" class="section">
             <div class="container">
                 <div class="about-grid">
-                    <div class="about-image-wrapper fade-right">
+                    <div class="about-image-wrapper">
                         <div class="about-image glass">
-                            <img src="assets/images/about_garage.png" alt="Mis Auto Color Garage">
+                            <img src="assets/images/restaurant_facade.png" alt="Céleste Luxury Facade">
                         </div>
                         <div class="experience-badge glass">
-                            <span class="exp-number">3+</span>
-                            <span class="exp-text">Tahun<br>Pengalaman</span>
+                            <span class="exp-number">3 ★</span>
+                            <span class="exp-text">Michelin<br>Accolades</span>
                         </div>
                     </div>
                     
-                    <div class="about-text fade-left">
-                        <h2 class="section-title">Tentang <span>Mis Auto Color</span></h2>
-                        <p class="about-desc">Sejak tahun 2023, Mis Auto Color telah menjadi mitra terpercaya bagi para pecinta otomotif yang menginginkan kesempurnaan pada penampilan kendaraan mereka.</p>
-                        <p class="about-desc">Dengan memadukan tenaga ahli profesional, material berkualitas premium, dan teknologi mutakhir, kami menjamin setiap hasil pengerjaan memenuhi standar ekshibisi yang memukau.</p>
+                    <div class="about-text">
+                        <span class="badge">Warisan Kuliner</span>
+                        <h2 class="section-title">Mahakarya Rasa & <span>Keanggunan Estetika</span></h2>
+                        <p class="about-desc">Sejak berdiri, Céleste Culinary Group telah menjadi puncak keunggulan kuliner global. Kami mengawinkan presisi teknik kuliner Prancis klasik dengan keunikan rempah Nusantara untuk melahirkan karya seni di atas piring.</p>
+                        <p class="about-desc">Setiap restoran di bawah bendera kami dirancang secara spesifik untuk memanjakan kelima panca indra Anda—menawarkan atmosfer eksklusif, pelayanan kelas dunia, dan harmoni rasa yang tak terlupakan.</p>
                         
                         <ul class="about-features">
-                            <li><i class="ri-checkbox-circle-fill"></i> Teknisi Berpengalaman & Bersertifikat</li>
-                            <li><i class="ri-checkbox-circle-fill"></i> Ruang Oven Pengecatan Kedap Debu</li>
-                            <li><i class="ri-checkbox-circle-fill"></i> Garansi Hasil Pengerjaan</li>
-                            <li><i class="ri-checkbox-circle-fill"></i> Material Cat & Coating Premium</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Chef Kelas Dunia Berskala Internasional</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Bahan Organik Segar yang Dipanen Eksklusif</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Pilihan Wine Premium dari Penjuru Dunia</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Ruang Privat Eksklusif untuk Acara Spesial</li>
                         </ul>
                         <br>
-                        <a href="tentang.html" class="btn btn-outline">Selengkapnya Tentang Kami <i class="ri-arrow-right-line"></i></a>
+                        <a href="tentang.html" class="btn btn-outline">Kisah Selengkapnya <i class="ri-arrow-right-line"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section contact-section">
+        <!-- Live Menu Preview Section -->
+        <section id="menu-section" class="section" style="background: rgba(255, 255, 255, 0.01); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light)">
             <div class="container">
-                <div class="section-header fade-up">
-                    <h2 class="section-title">Hubungi <span>Kami</span></h2>
-                    <p class="section-desc">Siap membuat mobil Anda tampil sempurna? Hubungi kami sekarang untuk konsultasi dan estimasi biaya gratis.</p>
+                <div class="section-header">
+                    <span class="badge">Menu Pilihan</span>
+                    <h2 class="section-title">Simfoni Rasa <span>Céleste</span></h2>
+                    <p class="section-desc">Intip mahakarya rasa yang paling digemari oleh para tamu kami. Menu di bawah tersinkronisasi langsung dari menu dapur utama kami.</p>
                 </div>
-                
+
+                <!-- Tabs -->
+                <div class="menu-tabs">
+                    <button class="tab-btn active" data-category="all">Semua</button>
+                    <button class="tab-btn" data-category="appetizer">Appetizer</button>
+                    <button class="tab-btn" data-category="main">Main Course</button>
+                    <button class="tab-btn" data-category="dessert">Dessert</button>
+                    <button class="tab-btn" data-category="beverage">Beverage</button>
+                </div>
+
+                <!-- Grid dynamic loader -->
+                <div class="menu-grid" id="menu-dynamic-container" data-limit="6">
+                    <!-- Loaded dynamically via main.js from CelesteDB -->
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;">
+                    <a href="layanan.html" class="btn btn-primary">Lihat Seluruh Menu <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chef's Curations Showcase -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Rekomendasi Chef</span>
+                    <h2 class="section-title">Kreasi Signature <span>Musim Ini</span></h2>
+                    <p class="section-desc">Eksplorasi mahakarya kuliner pilihan Chef de Cuisine Céleste yang paling direkomendasikan untuk pengalaman bersantap perdana Anda.</p>
+                </div>
+
+                <div class="curations-grid">
+                    <!-- Card 1 -->
+                    <div class="curation-card glass">
+                        <div class="curation-img">
+                            <img src="assets/images/menu_salmon.png" alt="Tartare de Saumon Sauvage">
+                            <div class="curation-overlay"></div>
+                        </div>
+                        <div class="curation-content">
+                            <span class="curation-category">Signature Appetizer</span>
+                            <h3 class="curation-title">Tartare de Saumon</h3>
+                            <p>Salmon liar segar cincang dengan avocado mousse lembut, Oscietra caviar, dan citrus vinaigrette segar.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="curation-card glass">
+                        <div class="curation-img">
+                            <img src="assets/images/menu_wagyu.png" alt="Filet Mignon Rossini">
+                            <div class="curation-overlay"></div>
+                        </div>
+                        <div class="curation-content">
+                            <span class="curation-category">Signature Main Course</span>
+                            <h3 class="curation-title">Filet Mignon Rossini</h3>
+                            <p>Daging sapi Wagyu A5 panggang super lembut dengan foie gras, truffle purée, chanterelles, dan siraman Madeira jus.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="curation-card glass">
+                        <div class="curation-img">
+                            <img src="assets/images/menu_souffle.png" alt="L'Or Noir Soufflé">
+                            <div class="curation-overlay"></div>
+                        </div>
+                        <div class="curation-content">
+                            <span class="curation-category">Signature Dessert</span>
+                            <h3 class="curation-title">L'Or Noir Soufflé</h3>
+                            <p>Soufflé cokelat hitam Valrhona 70% yang mengembang sempurna, dihiasi lembaran emas murni 24k dan gelato vanilla.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Booking widget -->
+        <section id="booking-section" class="section" style="border-top: 1px solid var(--border-light); background: rgba(255, 255, 255, 0.01)">
+            <div class="container">
                 <div class="contact-grid">
-                    <div class="contact-info glass fade-right">
-                        <h3>Informasi Kontak</h3>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="ri-map-pin-2-fill"></i></div>
-                            <div class="info-text">
-                                <h4>Alamat Bengkel</h4>
-                                <p>Jln. Karang Asri RT 04 RW 03, Karangrau, Sokaraja, Kab. Banyumas, Jawa Tengah</p>
+                    <div class="contact-info glass">
+                        <div>
+                            <span class="badge">Reservasi Instan</span>
+                            <h3>Kunjungan Anda</h3>
+                            <p style="margin-bottom: 2rem;">Silakan isi formulir di samping untuk mengajukan pemesanan meja secara instan. Kami menyarankan untuk melakukan reservasi minimal 2 hari sebelumnya untuk menjamin ketersediaan meja terbaik.</p>
+                        </div>
+
+                        <div class="info-details">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="ri-phone-fill"></i></div>
+                                <div class="info-text">
+                                    <h4>Panggilan Langsung</h4>
+                                    <p>+62 822-3489-0919 (Concierge)</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="ri-mail-fill"></i></div>
+                                <div class="info-text">
+                                    <h4>Layanan Email</h4>
+                                    <p>concierge@celestegroup.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="ri-time-fill"></i></div>
+                                <div class="info-text">
+                                    <h4>Jam Operasional</h4>
+                                    <p>Selasa - Minggu: 17:00 - 23:00 (Senin Tutup)</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="ri-phone-fill"></i></div>
-                            <div class="info-text">
-                                <h4>Telepon / WhatsApp</h4>
-                                <p>+62 822-3489-0919</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="ri-mail-fill"></i></div>
-                            <div class="info-text">
-                                <h4>Email</h4>
-                                <p>misautocolour@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="ri-time-fill"></i></div>
-                            <div class="info-text">
-                                <h4>Jam Operasional</h4>
-                                <p>Senin - Sabtu: 08:00 - 17:00<br>Minggu: Tutup</p>
-                            </div>
-                        </div>
-                        
+
                         <div class="social-links">
                             <a href="#" class="social-link"><i class="ri-instagram-line"></i></a>
                             <a href="#" class="social-link"><i class="ri-facebook-circle-fill"></i></a>
@@ -199,32 +222,68 @@
                             <a href="#" class="social-link"><i class="ri-whatsapp-line"></i></a>
                         </div>
                     </div>
-                    
-                    <div class="contact-form glass fade-left">
-                        <h3>Kirim Pesan</h3>
-                        <form action="#" method="POST" id="contactForm">
+
+                    <div class="contact-form glass">
+                        <h3>Formulir Reservasi</h3>
+                        <form id="reservationForm">
                             <div class="form-group">
-                                <label for="name">Nama Lengkap</label>
-                                <input type="text" id="name" class="form-control" placeholder="Masukkan nama Anda" required>
+                                <label for="res_name">Nama Lengkap</label>
+                                <input type="text" id="res_name" class="form-control" placeholder="cth. Isabella Rossellini" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="res_email">Alamat Email</label>
+                                    <input type="email" id="res_email" class="form-control" placeholder="isabella@example.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="res_phone">Nomor Telepon / WA</label>
+                                    <input type="tel" id="res_phone" class="form-control" placeholder="0812xxxxxx" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="res_date">Tanggal Kunjungan</label>
+                                    <input type="date" id="res_date" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="res_time">Waktu Kedatangan</label>
+                                    <select id="res_time" class="form-control" required>
+                                        <option value="17:00">17:00</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="19:00" selected>19:00</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="21:00">21:00</option>
+                                        <option value="22:00">22:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="res_guests">Jumlah Tamu</label>
+                                    <select id="res_guests" class="form-control" required>
+                                        <option value="1">1 Orang</option>
+                                        <option value="2" selected>2 Orang</option>
+                                        <option value="3">3 Orang</option>
+                                        <option value="4">4 Orang</option>
+                                        <option value="6">6 Orang</option>
+                                        <option value="8">8+ Orang (Private Lounge)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="res_area">Preferensi Area Meja</label>
+                                    <select id="res_area" class="form-control" required>
+                                        <option value="main-salon">Main Dining Salon</option>
+                                        <option value="private-vault">Private Vault (VVIP)</option>
+                                        <option value="chef-counter">Chef's Table Counter</option>
+                                        <option value="terrace">Le Jardin Terrace</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label for="phone">Nomor WhatsApp</label>
-                                <input type="tel" id="phone" class="form-control" placeholder="0812xxxx" required>
+                                <label for="res_notes">Catatan Tambahan / Alergi Makanan</label>
+                                <textarea id="res_notes" class="form-control" rows="3" placeholder="cth. Merayakan ulang tahun pernikahan / Alergi kacang-kacangan..."></textarea>
                             </div>
-                            <div class="form-group">
-                                <label for="service">Layanan yang Dibutuhkan</label>
-                                <select id="service" class="form-control">
-                                    <option value="Body Repair">Body Repair</option>
-                                    <option value="Auto Painting">Auto Painting</option>
-                                    <option value="Coating">Nano Ceramic Coating</option>
-                                    <option value="Lainnya">Lainnya / Konsultasi</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Pesan / Detail Kerusakan</label>
-                                <textarea id="message" rows="4" class="form-control" placeholder="Ceritakan detail kerusakan atau kebutuhan mobil Anda..." required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block">Kirim Pesan <i class="ri-send-plane-fill"></i></button>
+                            <button type="submit" class="btn btn-primary btn-block">Kirim Pengajuan Reservasi <i class="ri-send-plane-fill"></i></button>
                         </form>
                     </div>
                 </div>
@@ -237,37 +296,39 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <a href="#" class="logo">
-                        <span class="logo-accent">Mis</span> Auto Color
+                    <a href="index.html" class="logo">
+                        CÉLESTE<span class="logo-accent">.</span>
                     </a>
-                    <p>Pilihan utama untuk perbaikan body dan pengecatan mobil premium di Indonesia.</p>
+                    <p>Mahakarya kuliner modern bercita rasa legendaris dengan pelayanan kelas dunia untuk penikmat gastronomi sejati.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Tautan Cepat</h4>
+                    <h4>Pintasan</h4>
                     <ul>
                         <li><a href="index.html">Beranda</a></li>
-                        <li><a href="layanan.html">Layanan</a></li>
+                        <li><a href="layanan.html">Menu & Layanan</a></li>
                         <li><a href="tentang.html">Tentang Kami</a></li>
-                        <li><a href="kontak.html">Kontak</a></li>
+                        <li><a href="kontak.html">Kontak & Lokasi</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Layanan</h4>
+                    <h4>Kategori Menu</h4>
                     <ul>
-                        <li><a href="layanan.html">Body Repair</a></li>
-                        <li><a href="layanan.html">Oven Painting</a></li>
-                        <li><a href="layanan.html">Ketok Magic</a></li>
-                        <li><a href="layanan.html">Nano Ceramic</a></li>
+                        <li><a href="layanan.html">Appetizer</a></li>
+                        <li><a href="layanan.html">Main Course</a></li>
+                        <li><a href="layanan.html">Dessert</a></li>
+                        <li><a href="layanan.html">Beverage</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Mis Auto Color. All rights reserved.</p>
+                <p>&copy; 2026 Céleste Culinary Group. All rights reserved.</p>
+                <p>Designed with Luxury Aesthetics</p>
             </div>
         </div>
     </footer>
 
-    <!-- Custom JS -->
+    <!-- Shared Local Database and Main Script -->
+    <script src="assets/js/db.js"></script>
     <script src="assets/main.js"></script>
 </body>
 </html>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layanan | Mis Auto Color</title>
-    <meta name="description" content="Layanan perbaikan body dan pengecatan mobil premium.">
+    <title>Menu & Layanan | Céleste Culinary Group</title>
+    <meta name="description" content="Jelajahi seluruh karya kuliner Céleste, dari hidangan pembuka yang segar hingga layanan katering elit dan private dining.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -23,21 +23,23 @@
     <div class="bg-orb orb-2"></div>
 
     <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container" style="height: 75px;">
             <a href="index.html" class="logo">
-                <span class="logo-accent">Mis</span> Auto Color
+                CÉLESTE<span class="logo-accent">.</span>
             </a>
             
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Beranda</a></li>
-                    <li><a href="layanan.html" class="nav-link active">Layanan</a></li>
+                    <li><a href="layanan.html" class="nav-link active">Menu & Layanan</a></li>
                     <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
-                    <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+                    <li><a href="kontak.html" class="nav-link">Kontak & Lokasi</a></li>
                 </ul>
                 <div class="nav-cta">
-                    <a href="kontak.html" class="btn btn-primary">Konsultasi Gratis</a>
+                    <a href="admin.html" class="btn btn-outline" style="padding: 0.5rem 1.2rem; font-size: 0.8rem; border-color: var(--accent-gold); color: var(--accent-gold);">
+                        <i class="ri-dashboard-fill" style="margin-right: 5px; margin-left: 0;"></i> Admin Panel
+                    </a>
                 </div>
             </div>
             
@@ -47,80 +49,85 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="page-header" style="background-image: url('assets/images/service_paint.png');">
-        <div class="page-header-content fade-up">
-            <h1 class="page-title">Layanan <span>Unggulan</span></h1>
-            <p class="page-subtitle">Solusi perawatan dan perbaikan estetika terbaik untuk mobil kesayangan Anda.</p>
+    <!-- Subpage Header -->
+    <section class="section" style="padding-top: 10rem; padding-bottom: 3rem; text-align: center;">
+        <div class="container">
+            <span class="badge">Eksplorasi Rasa</span>
+            <h1 class="section-title" style="font-size: 3.5rem;">Menu <span>& Layanan Kami</span></h1>
+            <p class="section-desc" style="max-width: 600px; margin: 0 auto;">Dari mahakarya kuliner di atas piring hingga pengalaman bersantap eksklusif yang dirancang personal untuk Anda.</p>
         </div>
-    </header>
+    </section>
 
-    <main class="page-content container">
-        
-        <!-- Service 1 Detail -->
-        <section class="service-detail-section">
-            <div class="service-detail-grid fade-up">
-                <div class="service-detail-img">
-                    <img src="assets/images/service_paint.png" alt="Premium Auto Painting">
+    <!-- Main Menu Explorer Section -->
+    <section class="section" style="padding-top: 2rem;">
+        <div class="container">
+            <!-- Tabs -->
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="all">Semua Menu</button>
+                <button class="tab-btn" data-category="appetizer">Appetizer</button>
+                <button class="tab-btn" data-category="main">Main Course</button>
+                <button class="tab-btn" data-category="dessert">Dessert</button>
+                <button class="tab-btn" data-category="beverage">Beverage</button>
+            </div>
+
+            <!-- Grid Dynamic Loader (No limits, shows all items in database!) -->
+            <div class="menu-grid" id="menu-dynamic-container">
+                <!-- Loaded dynamically via main.js from CelesteDB -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences / Culinary Services Section -->
+    <section class="section" style="background: rgba(255, 255, 255, 0.01); border-top: 1px solid var(--border-light)">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Pengalaman Eksklusif</span>
+                <h2 class="section-title">Layanan Kuliner <span>Privat</span></h2>
+                <p class="section-desc">Céleste menawarkan layanan katering kelas premium, persewaan ruang makan privat, dan kelas seni sommelier yang dirancang khusus.</p>
+            </div>
+
+            <div class="curations-grid">
+                <!-- Service Card 1 -->
+                <div class="curation-card glass">
+                    <div class="curation-img">
+                        <img src="assets/images/hero_bg.png" alt="Private Dining Salon">
+                        <div class="curation-overlay"></div>
+                    </div>
+                    <div class="curation-content">
+                        <span class="curation-category">Private Rooms</span>
+                        <h3 class="curation-title">Private Dining Salon</h3>
+                        <p>Ruang makan eksklusif berkapasitas 8-20 tamu dengan layanan pelayan privat (butler) dan dekorasi bunga segar sesuai kebutuhan Anda.</p>
+                    </div>
                 </div>
-                <div class="service-detail-text">
-                    <h3>Premium Auto Painting</h3>
-                    <p>Pengecatan mobil bukan hanya tentang warna, tetapi tentang presisi dan ketahanan. Kami menggunakan material cat dan clear coat premium dari merek ternama dunia yang diaplikasikan di dalam ruang oven kedap debu dengan teknologi tinggi.</p>
-                    <ul class="service-detail-list">
-                        <li><i class="ri-checkbox-circle-fill"></i> Pengecatan Full Body & Siram</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Pengecatan Per Panel (Spet)</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Custom Paint & Warna Eksklusif</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Color Matching Presisi Komputer</li>
-                    </ul>
-                    <br>
-                    <a href="kontak.html" class="btn btn-primary">Hubungi Kami <i class="ri-arrow-right-line"></i></a>
+
+                <!-- Service Card 2 -->
+                <div class="curation-card glass">
+                    <div class="curation-img">
+                        <img src="assets/images/menu_wagyu.png" alt="Chef's Table">
+                        <div class="curation-overlay"></div>
+                    </div>
+                    <div class="curation-content">
+                        <span class="curation-category">Exclusive Experience</span>
+                        <h3 class="curation-title">Chef's Table Counter</h3>
+                        <p>Pengalaman kuliner 9-course interaktif di depan bar dapur terbuka, berbincang langsung dengan Executive Chef kami saat menyiapkan hidangan Anda.</p>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="curation-card glass">
+                    <div class="curation-img">
+                        <img src="assets/images/menu_salmon.png" alt="Masterclass tasting">
+                        <div class="curation-overlay"></div>
+                    </div>
+                    <div class="curation-content">
+                        <span class="curation-category">Sommelier Guided</span>
+                        <h3 class="curation-title">Wine Masterclass</h3>
+                        <p>Sesi mencicipi anggur eksklusif berdurasi 2 jam yang dipimpin oleh Master Sommelier Céleste, memadukan wine langka dunia dengan hidangan ringan.</p>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Service 2 Detail -->
-        <section class="service-detail-section">
-            <div class="service-detail-grid reverse fade-up">
-                <div class="service-detail-text">
-                    <h3>Body Repair & Ketok Magic</h3>
-                    <p>Perbaikan struktural dan permukaan body mobil yang rusak akibat benturan atau kecelakaan. Teknisi ahli kami mampu mengembalikan lekukan presisi pabrik dengan metode terbaik sehingga mobil kembali utuh tanpa jejak dempul tebal.</p>
-                    <ul class="service-detail-list">
-                        <li><i class="ri-checkbox-circle-fill"></i> Perbaikan Ringan (Penyok/Baret)</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Perbaikan Berat (Kecelakaan)</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Penarikan Sasis (Chassis Pulling)</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Penggantian & Pemasangan Body Parts</li>
-                    </ul>
-                    <br>
-                    <a href="kontak.html" class="btn btn-primary">Hubungi Kami <i class="ri-arrow-right-line"></i></a>
-                </div>
-                <div class="service-detail-img">
-                    <img src="assets/images/about_garage.png" alt="Body Repair">
-                </div>
-            </div>
-        </section>
-
-        <!-- Service 3 Detail -->
-        <section class="service-detail-section">
-            <div class="service-detail-grid fade-up">
-                <div class="service-detail-img">
-                    <img src="assets/images/service_polish.png" alt="Nano Ceramic">
-                </div>
-                <div class="service-detail-text">
-                    <h3>Nano Ceramic & Auto Detailing</h3>
-                    <p>Investasi terbaik untuk menjaga kilau cat mobil Anda. Layanan detailing dan coating kami menghilangkan baret halus (swirl mark), mengembalikan warna asli, dan melindunginya dengan lapisan Nano Ceramic yang super keras.</p>
-                    <ul class="service-detail-list">
-                        <li><i class="ri-checkbox-circle-fill"></i> Paint Correction & Polishing</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Nano Ceramic Coating 9H / 10H</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Engine Bay Detailing</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Interior Premium Cleaning</li>
-                    </ul>
-                    <br>
-                    <a href="kontak.html" class="btn btn-primary">Hubungi Kami <i class="ri-arrow-right-line"></i></a>
-                </div>
-            </div>
-        </section>
-
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -128,36 +135,38 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <a href="index.html" class="logo">
-                        <span class="logo-accent">Mis</span> Auto Color
+                        CÉLESTE<span class="logo-accent">.</span>
                     </a>
-                    <p>Pilihan utama untuk perbaikan body dan pengecatan mobil premium di Indonesia.</p>
+                    <p>Mahakarya kuliner modern bercita rasa legendaris dengan pelayanan kelas dunia untuk penikmat gastronomi sejati.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Tautan Cepat</h4>
+                    <h4>Pintasan</h4>
                     <ul>
                         <li><a href="index.html">Beranda</a></li>
-                        <li><a href="layanan.html">Layanan</a></li>
+                        <li><a href="layanan.html">Menu & Layanan</a></li>
                         <li><a href="tentang.html">Tentang Kami</a></li>
-                        <li><a href="kontak.html">Kontak</a></li>
+                        <li><a href="kontak.html">Kontak & Lokasi</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Layanan</h4>
+                    <h4>Kategori Menu</h4>
                     <ul>
-                        <li><a href="layanan.html">Body Repair</a></li>
-                        <li><a href="layanan.html">Oven Painting</a></li>
-                        <li><a href="layanan.html">Ketok Magic</a></li>
-                        <li><a href="layanan.html">Nano Ceramic</a></li>
+                        <li><a href="layanan.html">Appetizer</a></li>
+                        <li><a href="layanan.html">Main Course</a></li>
+                        <li><a href="layanan.html">Dessert</a></li>
+                        <li><a href="layanan.html">Beverage</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Mis Auto Color. All rights reserved.</p>
+                <p>&copy; 2026 Céleste Culinary Group. All rights reserved.</p>
+                <p>Designed with Luxury Aesthetics</p>
             </div>
         </div>
     </footer>
 
-    <!-- Custom JS -->
+    <!-- Shared Local Database and Main Script -->
+    <script src="assets/js/db.js"></script>
     <script src="assets/main.js"></script>
 </body>
 </html>
